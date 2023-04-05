@@ -13,11 +13,11 @@ window.onload = async function() {
         var items = resp.items;
         for (i = 0; i < items.length; ++i)
         {
-            var listInputString = '<li tag = "' + items[i].item + '" > ' + items[i].item +  ' </li>';
+            var listInputString = '<li id = "' + items[i].item + '" > ' + items[i].item +  ' </li>';
             list.innerHTML += listInputString;
 
             itemToRemove = items[i].item;
-            document.getElementsByTagName(items[i].item).addEventListener("click", removeFromList);
+            document.getElementById(items[i].item).addEventListener("click", removeFromList);
         }
     });
 }
