@@ -24,10 +24,6 @@ app.get("/messages", (req, res) => {
   res.send("Hello");
 });
 
-/* 
-  Changed from '/add' to '/'
-  Trying to fix the Cannot GET / error - lol did not work, Professor Nick help pls
-*/
 app.post('/add', (req, res) => {
   var items;
   var dataHolder;
