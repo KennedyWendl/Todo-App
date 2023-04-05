@@ -1,0 +1,45 @@
+
+#removeButton {
+    width: 120px;
+    height: 25px;
+    margin: 1em; 
+}
+
+label {
+    font-family: 'Courier New', Courier, monospace;  
+    font-size: 130%;
+}
+
+input {
+    width: 180px;
+    height: 20px;
+}
+
+nav {
+    display: flex;
+    background: lightblue; 
+    position: sticky;
+    top: 0;
+}
+
+#navList {
+    display: flex;
+    font-size: 110%;
+    list-style: none;
+    padding: 10px;
+}
+
+ul li {
+    margin: .5em; 
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 110%;
+}
+
+ul {
+    font-family:'Courier New', Courier, monospace
+}
+
