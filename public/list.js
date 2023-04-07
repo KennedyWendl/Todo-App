@@ -26,7 +26,6 @@ window.onload = async function() {
 }
 var textInput = document.getElementById("todoItemInput")
 var list = document.getElementById("list")
-document.getElementById("removeButton").addEventListener("click", removeFromList);
 
 function addToList() {
     console.log(textInput.value)
