@@ -1,6 +1,17 @@
 
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    50%  {background-color:yellow; left:50px; top: 0px;}
+    100%  {background-color:blue; left:0px; top:0px;}
+  }
+
 label { 
     font-size: 135%;
+    color: #FFFFFF; 
+}
+
+body {
+    background: #333335; 
 }
 
 input {
@@ -22,7 +33,7 @@ nav {
     padding: 12px;
 }
 
-ul li {
+ul li{
     margin: .9em; 
 }
 
@@ -32,12 +43,25 @@ ul li a {
     font-size: 120%;
 }
 
+#list li {
+    border-radius: 50px;
+    border: 10px solid rgb(111, 144, 175);
+    width: 300px;
+    background: rgb(111, 144, 175);
+    color: #FFFFFF;
+}
+
 #list li:hover {
-    color:rgb(111, 144, 175);
-    font-size: 120%; 
+    /* color:rgb(111, 144, 175);
+    font-size: 120%;  */
+    position: relative;
+    animation-name: example;
+    animation-duration: 1.5s;
 }
 
 #list {
     font-size: 110%;
+    list-style: none;
+    padding-left: 0px; 
 }
 
