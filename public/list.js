@@ -4,7 +4,7 @@ var itemToRemove;
 
 window.onload = async function() {
     var responseVar =  "";
-    await fetch('http://localhost:3000/get')
+    await fetch('https://kw-todo-app.onrender.com/get')
     .then(response => {
         return response.json();
     })
@@ -29,7 +29,7 @@ var list = document.getElementById("list")
 
 function addToList() {
     console.log(textInput.value)
-    fetch('http://localhost:3000/add', {
+    fetch('https://kw-todo-app.onrender.com/add', {
     method: 'POST',
     headers: {
         'Accept': 'application/json',
@@ -48,7 +48,7 @@ function addToList() {
 }
 
 function removeFromList(param) {
-    fetch('http://localhost:3000/delete', {
+    fetch('https://kw-todo-app.onrender.com/delete', {
     method: 'DELETE',
     headers: {
         'Accept': 'application/json',
