@@ -1,66 +1,51 @@
 
-@keyframes example {
-    0%   {background-color:red; left:0px; top:0px;}
-    50%  {background-color:yellow; left:50px; top: 0px;}
-    100%  {background-color:blue; left:0px; top:0px;}
-  }
-
 label { 
-    font-size: 135%;
+    font-size: 200%;
     color: #FFFFFF; 
+    display: block;
+    text-align: center; 
+    border-color:rgb(69, 90, 110);
 }
 
 body {
-    background: #333335; 
-}
-
-input {
-    width: 180px;
-    height: 22px;
-}
-
-nav {
-    display: flex;
     background: rgb(111, 144, 175); 
-    position: sticky;
-    top: 0;
 }
 
-#navList {
+#todoItemInput {
     display: flex;
-    font-size: 110%;
-    list-style: none;
-    padding: 12px;
+    width: 480px;
+    height: 31px;
+    font-size: 100%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 ul li{
     margin: .9em; 
-}
-
-ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 120%;
+    position: relative;
 }
 
 #list li {
-    border-radius: 50px;
-    border: 10px solid rgb(111, 144, 175);
-    width: 300px;
-    background: rgb(111, 144, 175);
+    border: 10px solid rgb(69, 90, 110);
+    background: rgb(69, 90, 110);
     color: #FFFFFF;
+    width: 466px;
+    font-size: 115%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 #list li:hover {
-    /* color:rgb(111, 144, 175);
-    font-size: 120%;  */
     position: relative;
-    animation-name: example;
-    animation-duration: 1.5s;
+    font-size: 135%; 
+    text-decoration: line-through;
 }
 
 #list {
-    font-size: 110%;
+    font-size: 120%;
     list-style: none;
     padding-left: 0px; 
 }
