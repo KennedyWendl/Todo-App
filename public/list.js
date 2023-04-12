@@ -15,7 +15,6 @@ window.onload = async function() {
             let listInputString = '<li id = "' + items[i].item + '" > ' + items[i].item +  ' </li>';
             list.innerHTML += listInputString;
             itemToRemove = items[i].item;
-            // document.getElementById(items[i].item).addEventListener("click", function() {removeFromList(items[i].item)});
         }
         for (let i = 0; i < items.length; ++i)
         {
