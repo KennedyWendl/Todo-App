@@ -27,6 +27,11 @@ var textInput = document.getElementById("todoItemInput")
 var list = document.getElementById("list")
 
 function addToList() {
+    let input = textInput.value;
+    if (input == "")
+    {
+        return; 
+    }
     console.log(textInput.value)
     fetch('https://kw-todo-app.onrender.com/add', {
     method: 'POST',
@@ -36,15 +41,16 @@ function addToList() {
     },
     body: JSON.stringify({ "item": textInput.value})
 })
-    let input = textInput.value;
     let li = document.createElement("li");
+
     li.setAttribute("id", input);
     li.textContent = input;
     list.appendChild(li);
     let newLI = document.getElementById(input);
     newLI.addEventListener("click", function() {removeFromList(input)});
-  textInput.value = "";
+    textInput.value = "";
 }
+
 
 function removeFromList(param) {
     fetch('https://kw-todo-app.onrender.com/delete', {

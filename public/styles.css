@@ -4,12 +4,22 @@ label {
     color: #FFFFFF; 
     display: block;
     text-align: center; 
+    border: 10px;
     border-color:rgb(69, 90, 110);
 }
 
 body {
     background: rgb(111, 144, 175); 
 }
+
+/* #borderBox {
+    background-color: #FFFFFF;
+    border: 10px solid #FFFFFF;
+    padding: 20px;
+    width: 600px;
+    margin: auto; 
+    margin-top: 10px;
+} */
 
 #todoItemInput {
     display: flex;
